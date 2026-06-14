@@ -116,11 +116,11 @@ function App() {
           result={result}
         />
 
-        {/* 8. 会员权益 */}
-        <MemberServices />
+         {/* 8. 购机礼包 */}
+          <GiftBox />
 
-        {/* 9. 购机礼包 */}
-        <GiftBox />
+          {/* 9. 会员权益 */}
+          <MemberServices />
 
         {/* 页脚 */}
         <div className="text-center text-sm text-gray-400 mt-8 pb-8">
