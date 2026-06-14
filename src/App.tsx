@@ -65,8 +65,8 @@ function App() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl shadow-lg mb-4">
             <Smartphone className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">手机门店互动优惠计算器</h1>
-          <p className="text-gray-500">输入商品原价,体验实时优惠计算展示</p>
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">您的专属购机优惠</h1>
+          <p className="text-gray-500">输入商品原价,查看优惠权益</p>
         </div>
 
         {/* 1. 商品原价 */}
