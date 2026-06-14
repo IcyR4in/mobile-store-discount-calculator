@@ -121,13 +121,12 @@ export function GiftBox() {
           </div>
 
          <button
-            onClick={handleOpen}
-             disabled={animating}
-            className="w-full py-4 bg-gradient-to-r from-amber-400 to-orange-500 text-white rounded-xl font-semibold hover:from-amber-500 hover:to-orange-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+  onClick={handleUnlock}
+  className="w-full py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-xl font-semibold hover:from-pink-600 hover:to-rose-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
 >
-              <Gift className="w-5 h-5" />
-              {animating ? '开启中...' : '开启购机礼包'}
-          </button>
+  <Check className="w-5 h-5" />
+  解锁会员权益
+</button>
         </div>
       )}
     </div>
