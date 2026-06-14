@@ -120,29 +120,13 @@ export function GiftBox() {
             ))}
           </div>
 
-        <button
-  onClick={handleOpen}
-  disabled={animating}
-  className="w-full relative group"
->
-  <div
-    className={`relative overflow-hidden rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 p-8 transition-transform ${
-      animating ? 'animate-bounce' : 'hover:scale-[1.02]'
-    }`}
-  >
-    <div className="flex flex-col items-center">
-      <Gift className="w-16 h-16 text-white" />
-
-      <div className="mt-4 text-white font-semibold text-lg">
-        {animating ? '开启中...' : '点击开启购机礼包'}
-      </div>
-
-      <div className="mt-2 text-white/80 text-sm">
-        查看已确认的赠品
-      </div>
-    </div>
-  </div>
-</button>
+          <button
+            onClick={handleCollapse}
+            className="w-full mt-4 flex items-center justify-center gap-2 py-2 text-sm text-gray-500 hover:text-gray-700"
+          >
+            <ChevronUp className="w-4 h-4" />
+            收起礼包
+          </button>
         </div>
       )}
     </div>
