@@ -120,12 +120,13 @@ export function GiftBox() {
             ))}
           </div>
 
-          <button
-            onClick={handleCollapse}
-            className="w-full mt-4 flex items-center justify-center gap-2 py-2 text-sm text-gray-500 hover:text-gray-700"
-          >
-            <ChevronUp className="w-4 h-4" />
-            收起礼包
+         <button
+            onClick={handleOpen}
+             disabled={animating}
+            className="w-full py-4 bg-gradient-to-r from-amber-400 to-orange-500 text-white rounded-xl font-semibold hover:from-amber-500 hover:to-orange-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+>
+              <Gift className="w-5 h-5" />
+              {animating ? '开启中...' : '开启购机礼包'}
           </button>
         </div>
       )}
