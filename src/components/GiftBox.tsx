@@ -120,13 +120,29 @@ export function GiftBox() {
             ))}
           </div>
 
-         <button
-            onClick={handleUnlock}
-            className="w-full py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-xl font-semibold hover:from-pink-600 hover:to-rose-600 transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+        <button
+  onClick={handleOpen}
+  disabled={animating}
+  className="w-full relative group"
 >
-          <Check className="w-5 h-5" />
-          解锁会员权益
-          </button>
+  <div
+    className={`relative overflow-hidden rounded-xl bg-gradient-to-br from-amber-400 to-orange-500 p-8 transition-transform ${
+      animating ? 'animate-bounce' : 'hover:scale-[1.02]'
+    }`}
+  >
+    <div className="flex flex-col items-center">
+      <Gift className="w-16 h-16 text-white" />
+
+      <div className="mt-4 text-white font-semibold text-lg">
+        {animating ? '开启中...' : '点击开启购机礼包'}
+      </div>
+
+      <div className="mt-2 text-white/80 text-sm">
+        查看已确认的赠品
+      </div>
+    </div>
+  </div>
+</button>
         </div>
       )}
     </div>
